@@ -1,6 +1,10 @@
 # 🛡️ Aegis Automated Evaluation Harness
 
-An enterprise-grade LLM engineering validation suite built to programmatically bench-test, validate, and track regressions in localized language models completely offline.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aegis-eval-harness.streamlit.app/)
+
+An enterprise-grade LLM engineering validation suite built to programmatically bench-test, validate, and track regressions in localized language models.
+
+🔗 **Live App:** https://aegis-eval-harness.streamlit.app/
 
 ## 🚀 Key Architectural Features
 - **Deterministic Evaluation Pipelines:** Evaluates model outputs against strict data assertions using zero-temperature parameters.
@@ -11,6 +15,7 @@ An enterprise-grade LLM engineering validation suite built to programmatically b
 - `app.py`: High-contrast, theme-adaptive interface dashboard setup file.
 - `eval_engine.py`: Core automated validation testing loop execution file.
 - `test_cases.py`: The master dataset file holding our verification targets.
+- `requirements.txt`: Project dependencies for cloud deployment.
 - `.gitignore`: Filtering system file blocking internal file configurations.
 
 ## ⚙️ Quick Installation Guide
@@ -21,8 +26,7 @@ To fire up this benchmarking system locally, activate your command terminal and 
 venv\Scripts\activate
 
 # Install the necessary library files
-pip install numpy ollama streamlit
+pip install -r requirements.txt
 
 # Relaunch the execution server
 streamlit run app.py
-```
